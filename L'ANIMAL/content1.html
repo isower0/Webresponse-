@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>L'ANIMAL</title>
+
+	<meta name="viewport" content="width-device-width, initial-scale-1" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+		<div class="wrapper">
+			<header id="myHeader">
+			<nav>
+					<div class="logo" ><a href="index.html"><img class="logo-img" src="img/logo.png"></a></div>
+				<div class="menu-icon" >
+					<i class="fa fa-search fa-2x"></i>
+					<i class="fa fa-bars fa-2x" onclick="openNav()"></i>
+					
+					<!-- menu tab --><div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">หน้าแรก</a>
+  <a href="#"> <select id="selectbox" onchange="selectboxHandler(this.value)" data-selected="">
+												  <option value="" id="" selected="selected"  disabled="disabled">ประเภทสัตว์</option>
+												  <option value="content1">สัตว์บก</option>
+												  <option value="content2">สัตว์น้ำ</option>
+												  <option value="content3">สัตว์ปีก</option>
+												 
+												</select></a>
+  <a href="#">บล็อก</a>
+ <a href="contact.html">ติดต่อเรา</a>
+</div><!-- menu tab -->
+		
+					
+				</div>
+
+				
+				<div class="menu"> 
+							<ul>
+								<li ><a href="index.html">หน้าแรก</a></li>
+								<li ><a href="#"><select id="selectbox" onchange="selectboxHandler(this.value)" data-selected="">
+												  <option value="" selected="selected" disabled="disabled">ประเภทสัตว์</option>
+												  <option value="content1" >สัตว์บก</option>
+												  <option value="content2">สัตว์น้ำ</option>
+												  <option value="content3">สัตว์ปีก</option>
+												 
+												</select></a>
+								</li>
+								<li ><a href="#">บล็อก</a></li>
+								<li ><a href="contact.html">ติดต่อเรา</a></li>
+							
+								
+							</ul>
+
+				</div>
+			</nav>
+
+
+		</header>
+
+		<section class="banner-content1">
+			
+			<div class="box_content">
+				
+				<div class="box-banner"><p >สัตว์บก</p></div>
+				<div class="content-banner-a">
+					
+					<p class="in-con">สารคดี ความรู้ ความแปลกใหม่ คุณสามารถใช้วิจารณญาณรับชม แล้วเริ่มการรับชมสารคดี บ่อยครั้งเลยทีเดียวที่เราเห็นสิ่งเหนือธรรมชาติ สิ่งเร้นลับ ที่เราอยากรู้ แต่ไม่สามารถสัมผัสมันได้ การดูสารคดี ทำให้คุณได้สัมผัสความรู้ สิ่งแปลกใหม่ได้ง่ายขึ้น
+				</div>
+			
+			</div>
+
+
+		</section>
+
+
+		<div class="category-wrapper">
+				<div class="category1 img-cate1">
+						<p class="text-cate">เสือ</p>
+						<a href="content1.html"><button class="btn-cate1">ดูเพิ่มเติม</button></a>
+			
+				 	
+					
+				</div>
+
+				<div class="category1 img-cate2">
+					<p class="text-cate">จิ้งจอก</p>
+					<a href="#"><button class="btn-cate1">ดูเพิ่มเติม</button></a>
+					
+					
+				</div>
+
+				<div class="category1 img-cate3">
+					<p class="text-cate">กวาง</p>
+					<a href="#"><button class="btn-cate1">ดูเพิ่มเติม</button></a>
+					
+					
+				</div>
+
+				<div class="category1 img-cate4">
+					<p class="text-cate">คิงคอง</p>
+					<a href="#"><button class="btn-cate1">ดูเพิ่มเติม</button></a>
+					
+					
+				</div>
+
+				<div class="category1 img-cate5">
+					<p class="text-cate">สิงโต</p>
+					<a href="#"><button class="btn-cate1">ดูเพิ่มเติม</button></a>
+					
+					
+				</div>
+
+				<div class="category1 img-cate6">
+					<p class="text-cate">ยีราฟ</p>
+					<a href="#"><button class="btn-cate1">ดูเพิ่มเติม</button></a>
+					
+					
+				</div>
+
+				
+
+			</div><!-- category-wrapper -->
+
+
+			
+			
+
+			<div class="content-wrapper">
+				
+				<select class="choose-content">
+					
+					<option value="Latest Stories" >Latest Stories</option>
+				
+					<option value="Most View">Most View</option>
+				</select>
+				
+				<p class="con-head">Latest Stories</p>
+				<hr>
+			
+			<div>
+
+			<div id="fn-box">
+
+				<div class="content-fn">
+					<div class="img pic-con1"></div>
+					<div class="content-box">
+					<p class="fn-head">หมาป่า</p>
+					<p class="fn-text">	
+					หมาป่า หรือ หมาป่าสีเทา นับได้ว่าเป็นหมาป่าที่ตัวใหญ่ที่สุดในตระกูลหมาป่าด้วยกันเลยครับ เพศผู้น้ำหนักจะเฉลี่ย 43-45กิโลกรัม(95-99 ปอนด์) ส่วน เพศเมียน้ำหนักเฉลี่ย 36-38.5กิโลกรัม(79-85 ปอนด์)เมื่อโตเต็มที่จะมีความยาวถึงตั้ง 2 เมตร มันเป็นสัตว์เลี้ยงลูกด้วยนม หน้าตาคล้ายสุนัข มีหางใหญ่เป็นพวงหน้าอกจะแคบ ขายาว อุ้งเท้าใหญ่ เล็บทื่อ ทำให้เดินบนพื้นที่ลื่นได้ดี..
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+		
+				<div class="content-fn">
+					<div class="img  pic-con2"></div>
+					<div class="content-box">
+					<p class="fn-head">ยีราฟ</p>
+					<p class="fn-text">	
+					ป็นสัตว์เคี้ยวเอื้อง คอยาวแต่มีจำนวนข้อ และกระดูกที่คอเท่ากับสัตว์เลี้ยงลูกด้วยน้ำนมชนิดอื่น มีเขาสั้น ๆ ๑ คู่ หุ้มด้วยหนัง ตัวสีน้ำตาลอมเหลือง มีลายสีน้ำตาลเข้ม สูงได้ถึง ๕ เมตร มีถิ่นกำเนิดในทวีปแอฟริกา
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+					</div>
+				</div>
+		
+
+
+				<div class="content-fn">
+					<div class="img pic-con3"></div>
+					<div class="content-box">
+					<p class="fn-head">niagara falls</p>
+					<p class="fn-text">	
+					เป็นน้ำตกขนาดใหญ่หลายแห่งประกอบกัน ตั้งอยู่บนแม่น้ำไนแอการาทางตะวันออกของทวีปอเมริกาเหนือ บนพรมแดนระหว่างประเทศแคนาดากับสหรัฐอเมริกา น้ำตกไนแอการาประกอบด้วยน้ำตกสามแห่งที่แยกออกจากกัน คือ "น้ำตกเกือกม้า"
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+
+				<div class="content-fn clear">
+					<div class="img pic-con4"></div>
+					<div class="content-box">
+					<p class="fn-head">ช้าง</p>
+					<p class="fn-text">	
+					 เป็นสัตว์ป่าขนาดใหญ่ที่สุด หนังหนา และมีขนแข็งกระจายห่าง ๆ ผิวสีเทาแก่ หรือน้ำตาล จมูกยื่นยาว เรียกว่า งวง ตัวผู้ที่มีงายาว เรียกว่า ช้างพลาย ถ้ามีงาสั้น เรียกว่า ช้างสีดอ ตัวเมีย เรียกว่า ช้างพังโดยมากไม่มีงา บางตัวอาจมีงาสั้น ๆ
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+
+				<div class="content-fn clear">
+					<div class="img pic-con5"></div>
+					<div class="content-box">
+					<p class="fn-head">สิงโต</p>
+					<p class="fn-text">	
+					สิงโตเป็นเสือขนาดใหญ่ ขนสั้นเกรียนสีน้ำตาลอ่อน บางตัวอาจมีสีออกเทาเงิน หรือบางตัวก็มีสีอมแดง หรือถึงน้ำตาลแดง ใบหน้ากว้าง ปากค่อนข้างยาว จมูกมักมีสีดำสนิท ม่านตาสีเหลืองหรืออำพัน รูม่านตากลม หูสั้นกลม หลังหูดำ ขาหน้าใหญ่และแข็งแรงกว่าขาหลัง อุ้งตีนกว้าง หางค่อนข้างยาว ปลายหางเป็นพู่สีดำ และมักมีสิ่งคล้ายเดือยแข็งอยู่อันหนึ่งซ่อนอยู่ภายในพู่หางด้วย
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+
+				<div class="content-fn clear">
+					<div class="img pic-con6"></div>
+					<div class="content-box">
+					<p class="fn-head">นกแก้ว</p>
+					<p class="fn-text">	
+					ป็นสัตว์ปีก เป็นนกที่อาศัยและหากินบนต้นไม้ กินผลไม้และเมล็ดพืช บินได้ดีและบินได้เร็วพบอาศัยอยู่เป็นคู่หรือเป็นฝูง ทำรังตามโพรงต้นไม้ ไข่สีขาวลักษณะทรงกลม วางไข่ครั้งละ 2-6 ฟอง ลูกนกแรกเกิดมีสภาพเป็นลูกอ่อนเดินไม่ได้ พบกระจายพันธุ์ตามเขตร้อน
+					<a href="#">อ่านเพิ่มเติม</a>
+
+					</p>
+
+					</div>
+				</div>
+				<div class="content-fn clear">
+					<div class="img pic-con7"></div>
+					<div class="content-box">
+					<p class="fn-head">หมาจิ้งจอก</p>
+					<p class="fn-text">	
+					หมาจิ้งจอก หรือ สุนัขจิ้งจอก หรือเรียกสั้น ๆ ว่า จิ้งจอก (อังกฤษ: fox, jackal; อีสาน: หมาจอก) จัดอยู่ในไฟลัมสัตว์มีกระดูกสันหลัง ชั้นสัตว์เลี้ยงลูกด้วยนม วงศ์ Canidae ในเผ่า Vulpini ลักษณะทั่วไปของหมาจิ้งจอกจะมีขนาดลำตัวที่เล็กกว่าสุนัขบ้านทั่วไป และคล้ายกับสุนัขไทยพื้นเมือง จมูกแหลมยาว หูใหญ่ชี้ตั้ง ฟันกรามแข็งแรงและแหลมคม หางยาวเป็นพวง ขนสีน้ำตาลแกมเหลือง หมาจิ้งจอกมีทั้งหมด 27 ชนิด
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+				<div class="content-fn clear">
+					<div class="img pic-con8"></div>
+					<div class="content-box">
+					<p class="fn-head">ฉลาม</p>
+					<p class="fn-text">	
+					ปลาฉลามแบ่งออกได้เป็นหลายอันดับ หลายวงศ์ และหลายชนิด โดยปัจจุบันพบแล้วกว่า 440 ชนิด มีขนาดลำตัวแตกต่างออกไปตั้งแต่ 17 เซนติเมตร เท่านั้น ในปลาฉลามแคระ (Etmopterus perryi) ซึ่งเป็นปลาฉลามน้ำลึกที่อาศัยอยู่ในมหาสมุทรแอตแลนติกบริเวณทวีปอเมริกาใต้ ไปจนถึง ปลาฉลามวาฬ (Rhincodon typus) ที่มีความยาวกว่า 12 เมตร ซึ่งเป็นปลาที่ใหญ่ที่สุดในโลกด้ว
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+				<div class="content-fn clear">
+					<div class="img pic-con9"></div>
+					<div class="content-box">
+					<p class="fn-head">ม้าลาย</p>
+					<p class="fn-text">	
+				ม้าลายเป็นม้าจำพวกหนึ่งที่มีขนาดเล็กกว่าม้า แต่มีปลายหางคล้ายลา มีแผงคอที่สั้นเหมือนขนแปรง มีลักษณะเด่น คือ มีลำตัวเป็นสีขาวสลับดำตลอดทั้งตัว ซึ่งสีอันโดดเด่นนี้ เป็นคำถามมาเป็นระยะเวลานานแล้วว่า แท้ที่จริงแล้วม้าลายเป็นสัตว์ที่มีพื้นลำตัวขาวและมีแถบสีดำพาดผ่าน หรือเป็นสัตว์ที่มีพื้นลำตัวสีดำและมีแถบสีขาวพาดผ่านกันแน่ ในความเชื่อของชาวพื้นเมืองแอฟริกา เชื่อว่า ม้าลายเป็นสัตว์ที่มีสีดำและมีแถบสีขาวพาดผ่าน
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+
+					</div>
+				</div>
+
+		
+
+				<div class="content-fn">
+					<div class="img pic-con10"></div>
+					<div class="content-box">
+					<p class="fn-head">ป่าไม้</p>
+					<p class="fn-text">	
+					ป่าไม้ ตามพระราชบัญญัติป่าไม้ หมายถึง ที่ดินที่ไม่มีบุคคลใดบุคคลหนึ่งได้มาซึ่งกรรมสิทธิ์ครอบครองตามกฎหมายที่ดิน โดยทั่วไป หมายถึง บริเวณที่มีความชุ่มชื้น และปกด้วยใบไม้สีเขียว ขึ้นอยู่อย่างหนาแน่นและกว้างใหญ่พอที่จะมีอิทธิพลต่อสิ่งแวดล้อมในบริเวณนั้น เช่น ความเปลี่ยนแปลงของลมฟ้าอากาศ ความอุดมสมบูรณ์ของดินและน้ำ มีสัตว์ป่าและสิ่งมีชีวิตอื่นซึ่งมีความสัมพันธ์ซึ่งกันและกัน
+					<a href="#">อ่านเพิ่มเติม</a>
+					</p>
+					</div>
+				</div>
+
+
+				<div class="btn-con"><button>ทั้งหมด</button></div>
+			</div><!--  -->
+
+				
+			</div>
+
+	
+
+
+		</div><!-- content-wrapper -->
+
+
+
+<footer>
+	<div class="footer">
+	<p class="t-footer t-headsub"> SUBSCRIBE</p>
+	<p class="t-footer t-sub">Subscribe to our Newsletter to keep
+up on all of the latest happenings.
+</p>
+	<input type="text" name="Email" placeholder="Email...">
+	<button class="btn-footer">Subscribe</button>
+	<p class="t-footer follow">ติดตามได้ที่</p>
+	<div class="f-icon">
+		<i class="fab fa-facebook-square"></i>
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-twitter-square"></i>
+	</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+/*function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+*/
+// Close the dropdown if the user clicks outside of it
+/*window.onclick = function(event) {
+  if (!event.target.matches('.fa-bars')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}*/
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+function selectboxHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+
+  
+    function selectHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+
+
+
+
+</body>
+</html>

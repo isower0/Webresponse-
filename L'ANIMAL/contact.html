@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>L'ANIMAL</title>
+
+	<meta name="viewport" content="width-device-width, initial-scale-1" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+		<div class="wrapper">
+			<header id="myHeader">
+			<nav>
+					<div class="logo" ><a href="index.html"><img class="logo-img" src="img/logo.png"></a></div>
+				<div class="menu-icon" >
+					<i class="fa fa-search fa-2x"></i>
+					<i class="fa fa-bars fa-2x" onclick="openNav()"></i>
+					
+					<!-- menu tab --><div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">หน้าแรก</a>
+   <a href="#"><select id="selectbox" onchange="selectboxHandler(this.value)" data-selected="">
+												  <option value="" id="" selected="selected"  disabled="disabled">ประเภทสัตว์</option>
+												  <option value="content1">สัตว์บก</option>
+												  <option value="content2">สัตว์น้ำ</option>
+												  <option value="content3">สัตว์ปีก</option>
+												 
+												</select></a>
+  <a href="#">บล็อก</a>
+ <a href="contact.html">ติดต่อเรา</a>
+</div><!-- menu tab -->
+		
+					
+				</div>
+
+				
+				<div class="menu"> 
+							<ul>
+								<li ><a href="index.html">หน้าแรก</a></li>
+								<li ><a href="#"><select id="selectbox" onchange="selectboxHandler(this.value)" data-selected="">
+												  <option value="" selected="selected" disabled="disabled">ประเภทสัตว์</option>
+												  <option value="content1" >สัตว์บก</option>
+												  <option value="content2">สัตว์น้ำ</option>
+												  <option value="content3">สัตว์ปีก</option>
+												 
+												</select></a>
+								</li>
+								<li ><a href="#">บล็อก</a></li>
+								<li ><a href="contact.html">ติดต่อเรา</a></li>
+							
+								
+							</ul>
+
+				</div>
+			</nav>
+
+
+		</header>
+
+
+<section class="banner-contact">
+			
+			<div class="box_content">
+				
+				<div class="box-banner"><p >Contact</p></div>
+				<div class="content-banner-a">
+					
+					<p class="in-con">ศูนย์ช่วยเหลือ บอกให้เราทราบเกี่ยวกับปัญหาของคุณ
+เพื่อให้เราสามารถช่วยคุณได้อย่างรวดเร็วและทำให้เรารู้จักคุณมากขึ้น
+
+				</div>
+			
+			</div>
+
+
+		</section>
+
+
+		<section class="message">
+
+		<div class="box-contact">
+
+			<div class="inbox head-box">
+				<h1>Drop Us A Message</h1>
+				<p class="small">พูดคุยกับเราเพื่อให้เรารู้จักคุณมากขึ้นหรือแจ้งปัญหาต่างๆ</p>
+			</div>
+			<form>
+			<div class="inbox style-box">
+				<p>First name</p>
+				<input  type="text"  name="First-Name" placeholder="FirstName.....">
+				<p>Last name</p>
+					<input type="text" name="Last-Name" placeholder="LastName.....">
+					<p>Your Email</p>
+						<input type="text" name="Email" placeholder="Your Email.....">
+						
+						<p>Country </p>							
+			<select  class="setcountry" id="country" name="country"	>
+				<option value="0">เลือกประเทศที่อยู่:</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        	<p>แนวสารคดีที่ชอบ</p>
+        	<select  class="setcountry" id="country" name="country"	>
+				<option value="0">เลือกแนวสารคดีที่ชอบ:</option>
+          <option value="">สัตว์บก</option>
+          <option value="">สัคว์น้ำ</option>
+          <option value="">สัตว์ปีก</option>
+           <option value="">สัตว์ครึ่งบกครึ่งน้ำ</option>
+        </select>
+        	<p>Anything else?</p>
+        	<textarea class="area" placeholder="หากคุณมีคำถามอะไร....."></textarea>
+        	<p></p>
+        	<input type="submit" name="" value="Submit">
+			</div>
+			</form>
+
+
+		</div><!--  box contact -->
+
+		
+		</section>
+
+		<section class="contactus">
+			<div class="box-w">
+			<div class="box-us ">
+				<i class="fas fa-map-marker-alt icon"></i>
+				<p>Address</p>
+				<p>1 หมู่ 3 Sampraya, Thailand, อำเภอชะอำ เพชรบุรี</p>
+			</div><!-- 1 -->
+
+			<div class="box-us">
+				<i class="fas fa-clock icon"></i>
+				<p>Opening</p>
+				<p>วันจันทร์ - วันเสาร์ เวลา 09.00 น. - 17.00 น.</p>
+			</div><!-- 2 -->
+
+			<div class="box-us">
+				<i class="fas fa-envelope icon"></i>
+				<p>Email</p>
+				<p>mail@gmail.com</p>
+			</div><!-- 3 -->
+</div>
+</section><!-- web contact -->
+
+<div class="map">
+	<iframe id="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15571.50199988193!2d99.868308!3d12.656167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fcffa2ece6370b%3A0xfd3165c98fb66e24!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lio4Li04Lil4Lib4Liy4LiB4LijIOC4p-C4tOC4l-C4ouC4suC5gOC4guC4leC4quC4suC4o-C4quC4meC5gOC4l-C4qOC5gOC4nuC4iuC4o-C4muC4uOC4o-C4tQ!5e0!3m2!1sth!2sth!4v1579033479753!5m2!1sth!2sth"  ></iframe>
+
+</div>
+
+
+<footer>
+	<div class="footer">
+	<p class="t-footer t-headsub"> SUBSCRIBE</p>
+	<p class="t-footer t-sub">Subscribe to our Newsletter to keep
+up on all of the latest happenings.
+</p>
+	<input type="text" name="Email" placeholder="Email...">
+	<button class="btn-footer">Subscribe</button>
+	<p class="t-footer follow">ติดตามได้ที่</p>
+	<div class="f-icon">
+		<i class="fab fa-facebook-square"></i>
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-twitter-square"></i>
+	</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+/*function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+*/
+// Close the dropdown if the user clicks outside of it
+/*window.onclick = function(event) {
+  if (!event.target.matches('.fa-bars')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}*/
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+function selectboxHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+
+  
+    function selectHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
